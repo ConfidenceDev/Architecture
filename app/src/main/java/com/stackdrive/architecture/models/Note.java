@@ -1,7 +1,10 @@
-package com.stackdrive.architecture;
+package com.stackdrive.architecture.models;
 
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
+
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
 
 @Entity(tableName = "note_table")
 public class Note {
@@ -11,8 +14,10 @@ public class Note {
 
     private String title;
 
+    @SerializedName("body")
     private String description;
 
+    @SerializedName("userId")
     private int priority;
 
     public Note(String title, String description, int priority) {

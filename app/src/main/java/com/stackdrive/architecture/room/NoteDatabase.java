@@ -1,4 +1,4 @@
-package com.stackdrive.architecture;
+package com.stackdrive.architecture.room;
 
 import android.content.Context;
 import android.os.AsyncTask;
@@ -8,6 +8,9 @@ import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
 import androidx.sqlite.db.SupportSQLiteDatabase;
+
+import com.stackdrive.architecture.models.Note;
+import com.stackdrive.architecture.services.NoteDao;
 
 @Database(entities = {Note.class}, version = 1)
 public abstract class NoteDatabase extends RoomDatabase {

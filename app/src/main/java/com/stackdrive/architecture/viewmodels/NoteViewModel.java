@@ -1,10 +1,13 @@
-package com.stackdrive.architecture;
+package com.stackdrive.architecture.viewmodels;
 
 import android.app.Application;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
+
+import com.stackdrive.architecture.models.Note;
+import com.stackdrive.architecture.repositories.NoteRepository;
 
 import java.util.List;
 

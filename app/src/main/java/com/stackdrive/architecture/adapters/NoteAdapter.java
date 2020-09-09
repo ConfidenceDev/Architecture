@@ -1,4 +1,4 @@
-package com.stackdrive.architecture;
+package com.stackdrive.architecture.adapters;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,10 +8,14 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.stackdrive.architecture.R;
+import com.stackdrive.architecture.models.Note;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.NoteHolder> {
+
     private List<Note> notes = new ArrayList<>();
 
     @NonNull
